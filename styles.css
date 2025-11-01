@@ -1,0 +1,44 @@
+/* styles.css — Portfolio SI */
+:root{
+  --bg: #0b1220;
+  --panel:#11182b;
+  --text:#e8eefc;
+  --muted:#a9b7d6;
+  --pri:#6aa1ff;
+  --pri-2:#3e7af6;
+  --card:#0e1628;
+  --shadow: 0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans','Apple Color Emoji','Segoe UI Emoji';background:var(--bg);color:var(--text)}
+a{color:var(--pri);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 1.2rem}
+.site-header{background:linear-gradient(180deg,#0b1220 0%,#0b1220 70%,#0e1628 100%)}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
+.brand{font-weight:800;font-size:1.2rem;color:#fff}
+.nav{display:flex;gap:1rem;list-style:none;margin:0;padding:0}
+.nav a{color:var(--text);opacity:.9}
+.burger{display:none;background:transparent;border:1px solid #2a3551;color:#fff;border-radius:8px;padding:.35rem .6rem}
+.hero{display:grid;grid-template-columns:1fr;gap:1rem;padding:3rem 0}
+.hero h1{font-size:2rem;margin:.2rem 0}
+.subtitle{color:var(--muted);margin:.2rem 0 1rem}
+.note{font-size:.95rem;color:#c9d6ffb0;margin-bottom:1rem}
+.btn{display:inline-block;padding:.7rem 1rem;border-radius:12px;background:transparent;border:1px solid #2a3551;color:var(--text);margin-right:.5rem;box-shadow:var(--shadow)}
+.btn.primary{background:linear-gradient(135deg,var(--pri),var(--pri-2));border:none}
+.block{margin:2.5rem 0}
+h2{font-size:1.6rem;margin:0 0 .8rem}
+.grid{display:grid;gap:1rem}
+.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid #1b2540;border-radius:18px;padding:1rem;box-shadow:var(--shadow)}
+.card h3{margin:.2rem 0}
+.links a{display:inline-block;margin-right:.6rem;margin-top:.4rem;background:#0b1325;border:1px solid #1f2b49;padding:.35rem .6rem;border-radius:10px}
+.files{list-style:disc;padding-left:1.2rem;color:var(--muted)}
+.project{background:var(--panel);border:1px solid #1b2540;border-radius:18px;padding:1rem}
+.site-footer{border-top:1px solid #1f2b49;margin-top:3rem}
+.site-footer p{color:#9fb1e0a8;font-size:.9rem;padding:1.2rem 0}
+@media (max-width:840px){
+  .burger{display:block}
+  .nav{display:none;flex-direction:column;position:absolute;top:60px;right:16px;background:#0c1426;border:1px solid #1f2b49;border-radius:12px;padding:.6rem;width:min(80vw,300px)}
+  .nav.show{display:flex}
+}

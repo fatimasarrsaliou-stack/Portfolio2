@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio SI – Semestre 5 MIAGE</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <nav class="navbar container">
+    <a class="brand" href="#home">Portfolio SI</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">☰</button>
+    <ul class="nav" id="nav">
+      <li><a href="#travaux">Travaux</a></li>
+      <li><a href="#notes">Notes de cours</a></li>
+      <li><a href="#docs">Docs SI</a></li>
+      <li><a href="#certif">Certifications</a></li>
+      <li><a href="#projet">Projet final</a></li>
+      <li><a href="#diapo">Diaporama</a></li>
+      <li><a href="#autres">Autres ressources</a></li>
+    </ul>
+  </nav>
+  <section class="hero container" id="home">
+    <div>
+      <h1>Portfolio – Introduction aux systèmes d’information</h1>
+      <p class="subtitle">Semestre 5 – Parcours MIAGE</p>
+      <p class="note">Hébergement gratuit (GitHub Pages). Code 100% HTML/CSS/JS – sans CMS.</p>
+      <a href="#travaux" class="btn primary">Voir mes livrables</a>
+      <a href="README.md" class="btn">Guide Git & mise en ligne</a>
+    </div>
+  </section>
+</header>
+
+<main class="container">
+  <section id="travaux" class="block">
+    <h2>Rubrique 1 — Travaux demandés</h2>
+    <p>Dépose ici tous les dossiers réalisés en classe. Nomme-les clairement.</p>
+    <div class="grid cards">
+      <!-- Exemple de carte -->
+      <article class="card">
+        <h3>TD MCD – Bibliothèque & Hôpital</h3>
+        <p>Modélisation MERISE (MCD/MLD), héritage, cardinalités.</p>
+        <div class="links">
+          <a href="contenu/travaux/TD_MCD.pdf" target="_blank">PDF</a>
+          <a href="contenu/travaux/TD_MCD_sources.zip" target="_blank">Sources</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Dossier Gestion de projet</h3>
+        <p>Questions 1 à 23 : contraintes, acteurs, cycle de vie, KPI.</p>
+        <div class="links">
+          <a href="contenu/travaux/Gestion_Projet_reponses.docx" target="_blank">DOCX</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="notes" class="block">
+    <h2>Rubrique 2 — Notes de cours individuel</h2>
+    <p>Notes structurées, propres et accessibles.</p>
+    <ul class="files">
+      <li><a href="contenu/notes-de-cours/note_de_cours_SI.docx">Note de cours SI (DOCX)</a></li>
+    </ul>
+  </section>
+
+  <section id="docs" class="block">
+    <h2>Rubrique 3 — Documents d’un système d’information</h2>
+    <p>Exemples : cahier des charges, MCD/MLD, schémas processus, E–R.</p>
+    <ul class="files">
+      <li><a href="contenu/documents-si/Cahier_des_charges_exemple.pdf">Cahier des charges (exemple)</a></li>
+    </ul>
+  </section>
+
+  <section id="certif" class="block">
+    <h2>Rubrique 4 — Certifications</h2>
+    <div class="grid cards">
+      <article class="card">
+        <h3>Certification X</h3>
+        <p>Brève description et compétences visées.</p>
+        <div class="links"><a href="contenu/certifications/certif_X.pdf" target="_blank">Voir</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projet" class="block">
+    <h2>Rubrique 5 — Projet final</h2>
+    <p>Concevoir et réaliser un projet numérique intégrant les compétences acquises.</p>
+    <div class="project">
+      <h3>Titre du projet</h3>
+      <p>Résumé (problème → solution, techno utilisées, résultats).</p>
+      <div class="links">
+        <a href="contenu/projet-final/rapport.pdf" target="_blank">Rapport</a>
+        <a href="contenu/projet-final/code.zip" target="_blank">Code</a>
+        <a href="contenu/projet-final/demo.html" target="_blank">Démo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="diapo" class="block">
+    <h2>Rubrique 6 — Diaporama pour la soutenance</h2>
+    <ul class="files">
+      <li><a href="contenu/diaporama/soutenance.pptx" target="_blank">Soutenance (PPTX)</a></li>
+    </ul>
+  </section>
+
+  <section id="autres" class="block">
+    <h2>Rubrique 7 — Autres ressources</h2>
+    <p>Veille, articles, vidéos, bookmarks pertinents.</p>
+    <ul class="files">
+      <li><a href="contenu/autres-ressources/veille1.pdf" target="_blank">Veille 1</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Portfolio SI – S5 MIAGE · Fait main en HTML/CSS/JS · <a href="https://github.com/" target="_blank" rel="noopener">GitHub Pages</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
