@@ -1,13 +1,13 @@
 /* styles.css — Portfolio SI */
 :root{
-  --bg: #0b1220;
-  --panel:#11182b;
-  --text:#e8eefc;
-  --muted:#a9b7d6;
-  --pri:#6aa1ff;
-  --pri-2:#3e7af6;
-  --card:#0e1628;
-  --shadow: 0 10px 30px rgba(0,0,0,.35);
+  --bg: #1A0C2F;         /* violet très sombre classe */
+  --panel:#24143F;       
+  --text:#FFC3E0;        /* rose clair élégant */
+  --muted:#DDA2BF;       
+  --pri:#FF7FBF;         /* rose flashy pour boutons et liens */
+  --pri-2:#FF5FAE;
+  --card:#2B1550;
+  --shadow: 0 10px 40px rgba(0,0,0,.45);
 }
 
 
