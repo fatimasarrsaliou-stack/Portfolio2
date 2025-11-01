@@ -42,3 +42,31 @@ h2{font-size:1.6rem;margin:0 0 .8rem}
   .nav{display:none;flex-direction:column;position:absolute;top:60px;right:16px;background:#0c1426;border:1px solid #1f2b49;border-radius:12px;padding:.6rem;width:min(80vw,300px)}
   .nav.show{display:flex}
 }
+/* --- Correctifs nav --- */
+.nav, .nav li {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+/* Par défaut (desktop) */
+.burger { display: none; }
+.nav { display: flex; gap: 1rem; }
+
+/* Mobile */
+@media (max-width: 840px) {
+  .burger { display: block; }
+  .nav { 
+    display: none;                     /* cachée tant qu’on n’a pas cliqué */
+    flex-direction: column; 
+    position: absolute; 
+    top: 60px; right: 16px; 
+    background:#0c1426; 
+    border:1px solid #1f2b49; 
+    border-radius:12px; 
+    padding:.6rem; 
+    width:min(80vw,300px);
+  }
+  .nav.show { display: flex; }         /* affichée après clic sur burger */
+}
+
