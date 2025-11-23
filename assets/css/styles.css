@@ -159,8 +159,8 @@ h2{font-size:1.6rem;margin:0 0 .8rem}
 
 /* Photo ronde avec animation */
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #ffffff;
