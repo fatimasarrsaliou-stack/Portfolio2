@@ -143,3 +143,61 @@ h2{font-size:1.6rem;margin:0 0 .8rem}
 #autres .grid.cards { gap: 1.1rem; }
 #autres .card p { color: var(--muted); margin: .25rem 0 .4rem; }
 
+/* --- SECTION INTRO PERSONNELLE --- */
+
+.intro-profile {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.intro-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Photo ronde avec animation */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  animation: fadeZoom 1.4s ease forwards;
+  opacity: 0;
+}
+
+/* Animation douce apparition + zoom */
+@keyframes fadeZoom {
+  0% { opacity: 0; transform: scale(0.7); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.intro-text {
+  max-width: 600px;
+}
+
+.intro-text h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.contact-list {
+  margin-top: 15px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-list li {
+  margin-bottom: 6px;
+}
+
+.contact-list a {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+
