@@ -294,6 +294,46 @@ h2{font-size:1.6rem;margin:0 0 .8rem}
   transform: scale(1.08);
   box-shadow: 0 8px 25px rgba(255,105,180,0.6);
 }
+/* Card centrée */
+.intro-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+
+  margin: 0 auto; /* centre horizontalement */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* CENTRE TOUT */
+  justify-content: center;
+}
+
+/* Photo RONDE + PLUS GRANDE + parfaitement centrée */
+.profile-pic {
+  width: 300px;      /* ← AUGMENTÉ */
+  height: 300px;     /* ← AUGMENTÉ */
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+
+  /* Halo lumineux */
+  box-shadow:
+    0 0 25px rgba(255,105,180,0.7),
+    0 0 55px rgba(255,105,180,0.4),
+    0 0 90px rgba(255,105,180,0.3);
+
+  /* Animations */
+  animation: float 3s ease-in-out infinite, fadeZoom 1.5s ease forwards;
+  opacity: 0;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* ← OBLIGE le centrage */
+}
+
 
 
 
